@@ -12,6 +12,7 @@
   align-items: center;
   flex-direction: column;
   padding: 8px;
+  min-width: 346px;
 }
 
 body {
@@ -20,6 +21,12 @@ body {
 
 .Section {
   margin: 8px 0;
+}
+
+.Board {
+  max-width: 440px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .LeftText {

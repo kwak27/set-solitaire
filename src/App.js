@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import React, { Component } from 'react';
 import Card from './Card';
 import CardHelpers from './CardHelpers';
@@ -131,8 +130,6 @@ class App extends Component {
   }
 
   render() {
-    const rows = _.chunk(this.state.faceUp, 4);
-
     return (
       <div className="App">
         <div className="Section">
@@ -143,18 +140,14 @@ class App extends Component {
           <button onClick={this.handleNewRapidGame}>New Rapid Game (42 cards)</button>
           <button onClick={this.handleNewBlitzGame}>New Blitz Game (21 cards)</button>
         </div>
-        <div className="Section">
-          {rows.map((row, rIndex) => (
-            <div className="Row" key={rIndex}>
-              {row.map((card) => (
-                <Card
-                  handleClickCard={this.handleClickCard.bind(null, card)}
-                  selected={this.state.selected.indexOf(card) > -1}
-                  key={card}
-                  id={card}
-                />
-              ))}
-            </div>
+        <div className="Section Board">
+          {this.state.faceUp.map((card) => (
+            <Card
+              handleClickCard={this.handleClickCard.bind(null, card)}
+              selected={this.state.selected.indexOf(card) > -1}
+              key={card}
+              id={card}
+            />
           ))}
         </div>
         <div className="Section">
