@@ -11,6 +11,8 @@
   margin: 8px;
   box-sizing: border-box;
   background-color: #FFF;
+  transition: all 0.2s ease;
+  animation: fadein 1s;
 }
 
 .Card:hover {
@@ -20,4 +22,9 @@
 .Selected {
   border: 1px solid #E25950;
   box-shadow: 2px 4px 6px #525F7F
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
