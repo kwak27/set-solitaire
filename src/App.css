@@ -1,0 +1,42 @@
+.Row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.App {
+  color: #525F7F;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 8px;
+}
+
+body {
+  background-color: #F6F9FC;;
+}
+
+.Section {
+  margin: 8px 0;
+}
+
+.LeftText {
+  text-align: right;
+  width: 50%;
+  padding-right: 4px;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+.RightText {
+  text-align: left;
+  width: 50%;
+  padding-left: 4px;
+  box-sizing: border-box;
+}
+
+.FullWidth {
+  width: 100%;
+}

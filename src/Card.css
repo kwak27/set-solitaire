@@ -1,0 +1,23 @@
+.Card {
+  height: 134px;
+  width: 94px;
+  border: 1px solid #6B7C93;
+  border-radius: 8px;
+  padding: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 8px;
+  box-sizing: border-box;
+  background-color: #FFF;
+}
+
+.Card:hover {
+  cursor: pointer;
+}
+
+.Selected {
+  border: 1px solid #E25950;
+  box-shadow: 2px 4px 6px #525F7F
+}
